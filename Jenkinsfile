@@ -1,6 +1,5 @@
 pipeline {
     agent any
-	def buildNumber = BUILDNUMBER
     
 
     stages {
@@ -13,8 +12,8 @@ pipeline {
 	    stage('build image') {
 		   steps {
 		        sh 'cp ./* /app';
-				sh 'docker build -t gosalapradeep/reactapp:${BUILDNUMBER} .';
-				sh 'docker run -d --name container${BUILDNUMBER} -p 80:3000 gosalapradeep/reactapp:${BUILDNUMBER}';
+				sh 'docker build -t gosalapradeep/reactapp:99 .';
+				sh 'docker run -d --name container99 -p 80:3000 gosalapradeep/reactapp:99';
 		   }
 		}
     }
