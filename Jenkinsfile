@@ -11,7 +11,7 @@ pipeline {
         }
 	    stage('build image') {
 		   steps {
-		        sh 'cp ./* /app';
+		        sh 'cp -r ./* /app';
 				sh 'docker build -t gosalapradeep/reactapp:99 .';
 				sh 'docker run -d --name container99 -p 80:3000 gosalapradeep/reactapp:99';
 		   }
