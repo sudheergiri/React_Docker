@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          This is Gosala Pradeep commiting the changes .
+          This is Gosala Pradeep commiting the changes using pipeline.
         </p>
         <a
           className="App-link"
