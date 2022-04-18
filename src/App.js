@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          This is Gosala Pradeep commiting the changes using Jenkins Pipeline.
+          This is Gosala Pradeep.
         </p>
         <a
           className="App-link"
