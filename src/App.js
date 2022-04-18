@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          This is Gosala Pradeep accessing the React Application from the server.
+          This is Gosala Pradeep pushing the code.
         </p>
         <a
           className="App-link"
