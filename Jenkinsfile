@@ -11,7 +11,7 @@ pipeline {
         }
 	    stage('build image') {
 		    steps {
-				sh 'sudo docker build -t gosalapradeep/reactapp:$BUILD_NUMBER /home/ubuntu/React_Docker';
+				sh 'docker build -t gosalapradeep/reactapp:$BUILD_NUMBER /home/ubuntu/React_Docker';
 		   }
 		}
     }
