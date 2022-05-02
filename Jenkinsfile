@@ -25,8 +25,7 @@ sh ' docker build -t sudheerdk/reactapp:$BUILD_NUMBER /home/ubuntu/React_Docker/
 }
 stage('build new conatiner') {
  steps {
-sh ' docker run -d --name c-$BUILD_NUMBER -p 80:3000 sudheerdk/reactapp:$BUILD_NUMBER';
-sh ' docker run -d --name d-$BUILD_NUMBER -p 3000:3000 sudheerdk/reactapp:$BUILD_NUMBER';
+sh ' docker run -d --name testcontainer-$BUILD_NUMBER -p 80:3000 sudheerdk/reactapp:$BUILD_NUMBER';
  }
 }
  }
