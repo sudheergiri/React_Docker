@@ -15,7 +15,7 @@ userRemoteConfigs: [[url: 'https://github.com/sudheergiri/React_Docker']]])
 }
  stage('STOP previous Container') {
  steps {
-sh ' docker rm -f $(docker ps -a -q) ';
+sh ' docker rm -f testcontainer';
  }
 }
  stage('build new image') {
